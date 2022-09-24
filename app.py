@@ -20,7 +20,7 @@ def get_new_memes():
     Returns:
         imgs [list]: List of image URLs
     """
-    url = 'https://www.ifunny.co/tags/programming'
+    url = 'https://www.memedroid/memes/gaming'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
     divs = soup.find_all('div', class_='item-aux-container')
